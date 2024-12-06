@@ -16,7 +16,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold tracking-wide">
-            مطبخ المغرب
+            أصيل
           </Link>
 
           {/* Desktop Menu */}
