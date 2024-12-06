@@ -8,7 +8,7 @@ import img4 from "../assets/fruits.jpg";
 
 // Lazy load components to reduce initial bundle size
 const AboutPage = lazy(() => import("./AboutPage"));
-const DishesPage = lazy(() => import("./DishesPage"));
+// const DishesPage = lazy(() => import("./DishesPage"));
 
 const HomePage = () => {
   // Product categories data
@@ -118,7 +118,7 @@ const HomePage = () => {
       {/* Lazy-loaded pages */}
       <Suspense fallback={<div>Loading...</div>}>
         <AboutPage />
-        <DishesPage />
+        {/* <DishesPage /> */}
       </Suspense>
 
       {/* Whatsapp Floating Button */}
