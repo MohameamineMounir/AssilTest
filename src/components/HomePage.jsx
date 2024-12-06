@@ -125,7 +125,7 @@ const HomePage = () => {
 
       {/* Whatsapp Floating Button */}
       <a
-        href="https://wa.me/123456789"
+        href="https://wa.me/+212648614441"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-xl hover:bg-green-700 transition-colors"
