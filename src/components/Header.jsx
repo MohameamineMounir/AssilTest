@@ -57,6 +57,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="md:hidden text-green-300 hover:text-green-400 transition-colors"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} // Adding an accessible name
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
