@@ -139,25 +139,54 @@ const DishesPage = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {category.items.map((dish, dishIndex) => (
+              // <div
+              //   key={dishIndex}
+              //   className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              // >
+              //   <div className="relative">
+              //     <img
+              //       src={dish.image}
+              //       alt={dish.name}
+              //       className="w-full h-52 object-cover rounded-t-xl"
+              //     />
+              //     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-75 rounded-t-xl"></div>
+              //     <h3 className="absolute inset-0 flex items-center justify-center text-xl font-semibold text-white">
+              //       {dish.name}
+              //     </h3>
+              //   </div>
+
+              //   <div className="p-6">
+              //     <p className="text-gray-600">{dish.description}</p>
+              //     <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-md font-medium hover:bg-green-600 transition">
+              //       Order Now
+              //     </button>
+              //   </div>
+              // </div>
               <div
                 key={dishIndex}
                 className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
               >
-                <div className="relative">
+                <div className="relative group">
+                  {/* Image Section */}
                   <img
                     src={dish.image}
                     alt={dish.name}
                     className="w-full h-52 object-cover rounded-t-xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-75 rounded-t-xl"></div>
-                  <h3 className="absolute inset-0 flex items-center justify-center text-xl font-semibold text-white">
+
+                  {/* Text Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent group-hover:from-green-800 group-hover:via-green-400 opacity-75 rounded-t-xl transition-all duration-300"></div>
+                  <h3 className="absolute inset-0 flex flex-col items-center justify-center text-center text-lg md:text-xl font-bold text-white px-4">
                     {dish.name}
                   </h3>
                 </div>
 
+                {/* Content Section */}
                 <div className="p-6">
-                  <p className="text-gray-600">{dish.description}</p>
-                  <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-md font-medium hover:bg-green-600 transition">
+                  <p className="text-gray-700 leading-relaxed">
+                    {dish.description}
+                  </p>
+                  <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-lg font-medium hover:bg-green-700 transition">
                     Order Now
                   </button>
                 </div>

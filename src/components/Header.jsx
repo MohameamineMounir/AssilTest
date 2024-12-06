@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import assil from "../assets/ASSIL.png";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -15,8 +15,14 @@ const Header = () => {
       <nav className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white p-4 sticky top-0 z-50 shadow-lg font-tajawal">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold tracking-wide">
-            أصيل
+          <Link to="/" className="flex items-center">
+            <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-green-700">
+              <img
+                src={assil}
+                alt="Logo Assil"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}

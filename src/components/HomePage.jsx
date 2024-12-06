@@ -50,19 +50,6 @@ const HomePage = () => {
 
   return (
     <>
-      {/* Delivery Notice Banner */}
-      {/* <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-4">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <FaClock size={20} />
-            <span className="font-bold text-lg">🚚 Livraison</span>
-            <span className="text-sm">
-              Livraison dans les 24 heures suivant la commande 🚚
-            </span>
-          </div>
-          <div className="text-sm">التوصيل بعد 24 ساعة من الطلب 🚚</div>
-        </div>
-      </div> */}
       <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-4">
         <div className="container mx-auto flex flex-col space-y-3 md:space-y-0 md:flex-row items-center justify-between text-center md:text-left px-4">
           {/* Left Section */}
@@ -87,7 +74,7 @@ const HomePage = () => {
       {/* Categories Section */}
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-extrabold text-center mb-10 text-green-800">
-          Nos Catégories de Produits
+          مرحبًا بكم في أصيل
         </h1>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
