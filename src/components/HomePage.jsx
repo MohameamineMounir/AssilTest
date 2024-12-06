@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { FaWhatsapp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../assets/kouskous.jpg";
-import img2 from "../assets/amracheCarot.jpg";
+import img2 from "../assets/amranch2.webp";
 import img3 from "../assets/pastilaPison.webp";
 import img4 from "../assets/basbousa.jpeg";
 
