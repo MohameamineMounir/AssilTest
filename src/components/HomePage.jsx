@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { FaWhatsapp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Button from "./Button";
+// import Button from "./Button";
 import img1 from "../assets/kouskous.jpg";
 import img2 from "../assets/ambranch.webp";
 import img3 from "../assets/pastilaPison.webp";
@@ -59,7 +59,7 @@ const HomePage = () => {
             <span className="font-bold text-lg">🚚 Livraison</span>
             <span className="text-sm">Commandez avant 24h</span>
           </div>
-          <div className="text-sm">التوصيل قبل 24 ساعة من الطلب 🚚</div>
+          <div className="text-sm">التوصيل بعد 24 ساعة من الطلب 🚚</div>
         </div>
       </div>
 
@@ -108,9 +108,6 @@ const HomePage = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto">
-                  <Button to={category.route}>Voir plus</Button>
-                </div>
               </div>
             </div>
           ))}
