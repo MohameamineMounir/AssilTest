@@ -57,7 +57,9 @@ const HomePage = () => {
           <div className="flex items-center space-x-2">
             <FaClock size={20} />
             <span className="font-bold text-lg">🚚 Livraison</span>
-            <span className="text-sm">Commandez avant 24h</span>
+            <span className="text-sm">
+              Livraison dans les 24 heures suivant la commande 🚚
+            </span>
           </div>
           <div className="text-sm">التوصيل بعد 24 ساعة من الطلب 🚚</div>
         </div>
@@ -86,7 +88,7 @@ const HomePage = () => {
                     height={300}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end ">
                     <h2 className="text-lg font-semibold text-white">
                       {category.title}
                     </h2>
@@ -98,7 +100,7 @@ const HomePage = () => {
               </Link>
 
               <div className="p-4 flex flex-col justify-between h-full">
-                <ul className="space-y-2 mb-4">
+                <ul className="space-y-2 mb-4 text-center">
                   {category.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
