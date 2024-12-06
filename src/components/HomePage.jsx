@@ -2,9 +2,9 @@ import { lazy, Suspense } from "react";
 import { FaWhatsapp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../assets/kouskous.jpg";
-import img2 from "../assets/ambranch.webp";
+import img2 from "../assets/amracheCarot.jpg";
 import img3 from "../assets/pastilaPison.webp";
-import img4 from "../assets/fruits.jpg";
+import img4 from "../assets/basbousa.jpeg";
 
 // Lazy load components to reduce initial bundle size
 const AboutPage = lazy(() => import("./AboutPage"));
@@ -77,7 +77,7 @@ const HomePage = () => {
           مرحبًا بكم في أصيل
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-5 lg:gap-8">
           {categories.map((category, index) => (
             <div
               key={index}
