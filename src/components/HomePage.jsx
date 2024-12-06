@@ -50,32 +50,25 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-4">
-        <div className="container mx-auto flex flex-col space-y-3 md:space-y-0 md:flex-row items-center justify-between text-center md:text-left px-4">
-          {/* Left Section */}
-          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-            <FaClock size={20} />
-            <span className="font-bold text-lg text-green-200 ">
-              {" "}
-              Livraison
-            </span>
-            <span className="text-sm md:text-base">
-              Livraison dans les 24 heures suivant la commande 🚚
-            </span>
+      <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-3">
+        <div className="container mx-auto flex items-center justify-between text-sm md:text-base px-4">
+          <div className="flex items-center space-x-2">
+            <FaClock size={20} className="text-green-200" />
+            <span className="font-bold text-green-200">Livraison</span>
           </div>
-
-          {/* Right Section */}
-          <div className="text-sm md:text-base">
-            التوصيل بعد 24 ساعة من الطلب 🚚
+          <div className="text-center md:text-left">
+            🚚 التوصيل خلال 24 ساعة من الطلب
           </div>
         </div>
       </div>
 
       {/* Categories Section */}
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-extrabold text-center mb-10 text-green-800">
-          مرحبًا بكم في أصيل
-        </h1>
+        <h4 className="text-sm text-center text-gray-600 mb-4">
+          نقدم مجموعة متنوعة من الخضروات الجاهزة للطهي، مقشرة ومقطعة حسب
+          اختياركم، بالإضافة إلى تشكيلة من الفواكه الطازجة، الأطباق التقليدية،
+          والحلويات المنزلية.
+        </h4>
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-5 lg:gap-8">
           {categories.map((category, index) => (

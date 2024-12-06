@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import assil from "../assets/ASSIL.png";
+import assil from "../assets/logo.jpg";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
