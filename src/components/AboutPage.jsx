@@ -59,8 +59,19 @@ const AboutPage = () => {
 
       {/* Content Container */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        {/*  */}
+        <div className="relative">
+          <img
+            src={aboutImg}
+            alt="Moroccan food"
+            className="rounded-lg shadow-lg"
+          />
+          <div className="absolute top-4 left-4 bg-green-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
+            الأصالة والجودة
+          </div>
+        </div>
         {/* Left: Text Content */}
-        <div className="bg-white rounded-lg shadow-lg p-8">
+        <div className="bg-white rounded-lg shadow-lg p-8 text-center">
           <h3 className="text-2xl font-semibold text-green-700 mb-4">
             نكهات مغربية أصيلة
           </h3>
@@ -84,16 +95,6 @@ const AboutPage = () => {
         </div>
 
         {/* Right: Image */}
-        <div className="relative">
-          <img
-            src={aboutImg}
-            alt="Moroccan food"
-            className="rounded-lg shadow-lg"
-          />
-          <div className="absolute top-4 left-4 bg-green-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
-            الأصالة والجودة
-          </div>
-        </div>
       </div>
     </section>
   );

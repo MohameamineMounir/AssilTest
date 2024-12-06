@@ -130,14 +130,14 @@ const DishesPage = () => {
   return (
     <section
       id="dishes"
-      className="container mx-auto my-16 px-4 rtl font-tajawal"
+      className="container mx-auto my-16 px-4 rtl font-tajawal text-center"
     >
       {productCategories.map((category, categoryIndex) => (
         <div key={categoryIndex} className="mb-16">
           <h2 className="text-3xl font-extrabold text-green-700 text-center mb-10">
             {category.category}
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {category.items.map((dish, dishIndex) => (
               <div
                 key={dishIndex}
@@ -150,10 +150,11 @@ const DishesPage = () => {
                     className="w-full h-52 object-cover rounded-t-xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-75 rounded-t-xl"></div>
-                  <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">
+                  <h3 className="absolute inset-0 flex items-center justify-center text-xl font-semibold text-white">
                     {dish.name}
                   </h3>
                 </div>
+
                 <div className="p-6">
                   <p className="text-gray-600">{dish.description}</p>
                   <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-md font-medium hover:bg-green-600 transition">
