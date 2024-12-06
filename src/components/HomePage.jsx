@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import { FaWhatsapp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import Button from "./Button";
 import img1 from "../assets/kouskous.jpg";
 import img2 from "../assets/ambranch.webp";
 import img3 from "../assets/pastilaPison.webp";
@@ -71,7 +70,7 @@ const HomePage = () => {
           Nos Catégories de Produits
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -88,7 +87,7 @@ const HomePage = () => {
                     height={300}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end ">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end text-center">
                     <h2 className="text-lg font-semibold text-white">
                       {category.title}
                     </h2>
