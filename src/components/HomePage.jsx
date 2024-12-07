@@ -2,51 +2,14 @@ import { lazy, Suspense } from "react";
 import { FaWhatsapp, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../assets/kouskous.jpg";
-import img2 from "../assets/amranch2.webp";
+import img2 from "../assets/amracheVeg1.jpg";
 import img3 from "../assets/pastilaPison.webp";
 import img4 from "../assets/basbousa.jpeg";
 
 // Lazy load components to reduce initial bundle size
 const AboutPage = lazy(() => import("./AboutPage"));
-// const DishesPage = lazy(() => import("./DishesPage"));
 
 const HomePage = () => {
-  // Product categories data
-  // const categories = [
-  //   {
-  //     src: img1,
-  //     title: "Packs legume",
-  //     description: "Découvrez nos packs de repas préparés",
-  //     route: "/dishes/legumesPack",
-  //     // items: [
-  //     //   "Pack couscous",
-  //     //   "Pack soupe",
-  //     //   "Pack légumes sautés",
-  //     //   "Pack tajine à choix",
-  //     // ],
-  //   },
-  //   {
-  //     src: img2,
-  //     title: " Légumes épluchés",
-  //     description: "Légumes frais et préparés",
-  //     route: "/dishes/LegumesEpluches",
-  //     // items: ["Légumes épluchés à choix", "Légumes coupés à choix"],
-  //   },
-  //   {
-  //     src: img3,
-  //     title: "Pastillas",
-  //     description: "Pastillas fraîches et savoureuses",
-  //     route: "/dishes/pastillas",
-  //     // items: ["Pastillas poisson", "Pastillas poulet"],
-  //   },
-  //   {
-  //     src: img4,
-  //     title: "Desserts",
-  //     description: "Nos délicieux desserts",
-  //     route: "/dishes/Desserts",
-  //     // items: ["Basboussa nature", "Basboussa à la crème", "Cake"],
-  //   },
-  // ];
   const categories = [
     {
       src: img1,
@@ -91,8 +54,17 @@ const HomePage = () => {
             <FaClock size={20} className="text-green-200" />
             <span className="font-bold text-green-200">Livraison</span>
           </div>
+          {/* <div className="text-center md:text-left">
+            🚚 التوصيل خلال 24 ساعة من الطلب | Tel: 0693819739
+          </div> */}
           <div className="text-center md:text-left">
-            🚚 التوصيل خلال 24 ساعة من الطلب
+            🚚 التوصيل خلال 24 ساعة من الطلب |
+            <a
+              href="tel:+212693819739"
+              className="text-green-300 hover:text-green-400 transition-colors duration-200"
+            >
+              Tel: 0693819739
+            </a>
           </div>
         </div>
       </div>
