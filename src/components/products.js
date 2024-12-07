@@ -3,7 +3,7 @@ import pastillaAupoulet from "../assets/pastillaAupoulet.png";
 // import LegumesEpluche from "../assets/mixlegume (1).jpg";
 // import Legumes from "../assets/amrache2.jpg";
 
-import frites from "../assets/frenchFries.jpg";
+// import frites from "../assets/frenchFries.jpg";
 import cake from "../assets/cake.jpg";
 import soup from "../assets/soup.jpg";
 import basbousa from "../assets/basbousa.jpeg";
@@ -15,10 +15,13 @@ import LegumesSautes from "../assets/sauteLégumes.jpeg";
 import saladeRoyale from "../assets/saladeRoyale.jpeg";
 import saladevaries from "../assets/saladevaries.jpg";
 
-import kouskous from "../assets/kouskous.jpg";
-import tajine from "../assets/tajine.jpg";
-import Fruits from "../assets/fruits.jpg";
-import amrache1 from "../assets/amrache2.jpg";
+import kouskous from "../assets/ambrachVeg2.jpg";
+// import tajine from "../assets/tajine.jpg";
+// import Fruits from "../assets/fruits.jpg";
+import amrache1 from "../assets/amranchVeg4.webp";
+import amrache2 from "../assets/ambrachVeg3.jpg";
+import amrache3 from "../assets/amrache2.jpg";
+
 export const PRODUCTS = [
   {
     category: "LegumesEpluches",
@@ -31,12 +34,12 @@ export const PRODUCTS = [
       {
         name: "خضروات مقشرة",
         description: "خضروات مقشرة",
-        image: amrache1,
+        image: amrache2,
       },
       {
         name: "بطاطس مقلية",
         description: "بطاطس مقلية بطريقة هشة",
-        image: amrache1,
+        image: amrache3,
       },
     ],
   },
@@ -75,16 +78,7 @@ export const PRODUCTS = [
       },
     ],
   },
-  // {
-  //   category: "Extras",
-  //   items: [
-  //     {
-  //       name: "فواكه",
-  //       description: "تشكيلة من الفواكه الطازجة",
-  //       image: Fruits,
-  //     },
-  //   ],
-  // },
+
   {
     category: "legumesPack",
     items: [
@@ -112,11 +106,6 @@ export const PRODUCTS = [
         name: "حزمة خضروات مطهية",
         description: "خليط من الخضروات الطازجة للتحمير",
         image: LegumesSautes,
-      },
-      {
-        name: "حزمة طاجن متنوع",
-        description: "حزمة قابلة للتخصيص للطاجن",
-        image: tajine,
       },
     ],
   },
