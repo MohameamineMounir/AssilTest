@@ -110,7 +110,7 @@ const Header = () => {
             عنا
           </Link>
           <Link
-            to="/dishes"
+            to="/dishes/alldishes"
             onClick={toggleMenu}
             className="hover:text-green-300 transition-colors duration-200"
           >
@@ -118,7 +118,7 @@ const Header = () => {
           </Link>
           {/* TikTok Link in Mobile Menu */}
           <a
-            href="https://www.tiktok.com/@yourtiktokusername"
+            href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
             target="_blank"
             rel="noopener noreferrer"
             onClick={toggleMenu}
