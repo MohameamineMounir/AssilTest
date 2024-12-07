@@ -47,7 +47,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/dishes"
+                to="/dishes/alldishes"
                 className="hover:text-green-300 transition-colors duration-200"
               >
                 الأطباق
