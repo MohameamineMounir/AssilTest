@@ -13,7 +13,7 @@ import AllDishes from "./components/AllDishes";
 const App = () => {
   return (
     <Router>
-      <div className="bg-[#f4fdf8] min-h-screen rtl">
+      {/* <div className="bg-[#f4fdf8] min-h-screen rtl">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,6 +26,25 @@ const App = () => {
 
           <Route path="/dishes/desserts" element={<Desserts />} />
         </Routes>
+        <Footer />
+      </div> */}
+      <div className="bg-[#f4fdf8] min-h-screen rtl flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/dishes" element={<DishesPage />} />
+            <Route path="/dishes/pastillas" element={<Pastillas />} />
+            <Route path="/dishes/legumesPack" element={<LegumesPack />} />
+            <Route
+              path="/dishes/LegumesEpluches"
+              element={<LegumesEpluches />}
+            />
+            <Route path="/dishes/allDishes" element={<AllDishes />} />
+            <Route path="/dishes/desserts" element={<Desserts />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
