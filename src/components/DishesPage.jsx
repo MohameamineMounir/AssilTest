@@ -1,7 +1,7 @@
 import bstillaPoison from "../assets/pastilaPison.webp";
 import pastillaAupoulet from "../assets/pastillaAupoulet.png";
-import LegumesEpluche from "../assets/mixlegume (1).jpg";
-import Legumes from "../assets/amrache2.jpg";
+// import LegumesEpluche from "../assets/mixlegume (1).jpg";
+// import Legumes from "../assets/amrache2.jpg";
 
 import frites from "../assets/frenchFries.jpg";
 import cake from "../assets/cake.jpg";
@@ -47,21 +47,7 @@ const DishesPage = () => {
         },
       ],
     },
-    {
-      category: "Légumes",
-      items: [
-        {
-          name: "Légumes Épluché à Choix",
-          description: "Légumes frais et préparés selon vos préférences",
-          image: LegumesEpluche,
-        },
-        {
-          name: "Légumes Épluché et Coupé à Choix",
-          description: "Légumes prêts à cuisiner, lavés et coupés",
-          image: Legumes,
-        },
-      ],
-    },
+
     {
       category: "Pastillas",
       items: [
@@ -142,29 +128,6 @@ const DishesPage = () => {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               {category.items.map((dish, dishIndex) => (
-                // <div
-                //   key={dishIndex}
-                //   className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-                // >
-                //   <div className="relative">
-                //     <img
-                //       src={dish.image}
-                //       alt={dish.name}
-                //       className="w-full h-52 object-cover rounded-t-xl"
-                //     />
-                //     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-75 rounded-t-xl"></div>
-                //     <h3 className="absolute inset-0 flex items-center justify-center text-xl font-semibold text-white">
-                //       {dish.name}
-                //     </h3>
-                //   </div>
-
-                //   <div className="p-6">
-                //     <p className="text-gray-600">{dish.description}</p>
-                //     <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-md font-medium hover:bg-green-600 transition">
-                //       Order Now
-                //     </button>
-                //   </div>
-                // </div>
                 <div
                   key={dishIndex}
                   className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl"

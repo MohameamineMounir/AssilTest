@@ -18,33 +18,33 @@ const HomePage = () => {
       title: "Meal Packs",
       description: "Découvrez nos packs de repas préparés",
       route: "/dishes",
-      items: [
-        "Pack couscous",
-        "Pack soupe",
-        "Pack légumes sautés",
-        "Pack tajine à choix",
-      ],
+      // items: [
+      //   "Pack couscous",
+      //   "Pack soupe",
+      //   "Pack légumes sautés",
+      //   "Pack tajine à choix",
+      // ],
     },
     {
       src: img2,
       title: "Légumes",
       description: "Légumes frais et préparés",
       route: "/dishes",
-      items: ["Légumes épluchés à choix", "Légumes coupés à choix"],
+      // items: ["Légumes épluchés à choix", "Légumes coupés à choix"],
     },
     {
       src: img3,
       title: "Pastillas",
       description: "Pastillas fraîches et savoureuses",
       route: "/dishes",
-      items: ["Pastillas poisson", "Pastillas poulet"],
+      // items: ["Pastillas poisson", "Pastillas poulet"],
     },
     {
       src: img4,
       title: "Desserts",
       description: "Nos délicieux desserts",
       route: "/dishes",
-      items: ["Basboussa nature", "Basboussa à la crème", "Cake"],
+      // items: ["Basboussa nature", "Basboussa à la crème", "Cake"],
     },
   ];
 
@@ -87,7 +87,7 @@ const HomePage = () => {
                     height={300}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end text-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end text-center">
                     <h2 className="text-lg font-semibold text-white">
                       {category.title}
                     </h2>
@@ -98,7 +98,7 @@ const HomePage = () => {
                 </div>
               </Link>
 
-              <div className="p-4 flex flex-col justify-between h-full">
+              {/* <div className="p-4 flex flex-col justify-between h-full">
                 <ul className="space-y-2 mb-4 text-center">
                   {category.items.map((item, itemIndex) => (
                     <li
@@ -109,7 +109,7 @@ const HomePage = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
