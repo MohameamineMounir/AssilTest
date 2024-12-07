@@ -8,9 +8,6 @@ const DishesPage = ({ data }) => {
         className="container mx-auto  px-4 rtl font-tajawal text-center"
       >
         <div key={data.category} className="mb-16">
-          {/* <h2 className="text-3xl font-extrabold text-green-700 text-center mb-10">
-            {data.category}
-          </h2> */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {data.items.map((dish) => (
               <div
@@ -23,9 +20,6 @@ const DishesPage = ({ data }) => {
                     alt={dish.name}
                     className="w-full h-52 object-cover transition-transform duration-300 hover:scale-105"
                   />
-                  {/* <div className="ab bg-green-500 text-white px-3 py-1 m-2 rounded-full text-sm font-semibold">
-                    {data.category}
-                  </div> */}
                 </div>
                 <div className="p-6 flex-grow">
                   <h3 className="font-bold text-xl mb-2 text-gray-800 line-clamp-2 text-center">

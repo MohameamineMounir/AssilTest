@@ -26,7 +26,7 @@ const HomePage = () => {
     {
       src: img2,
       title: "خضروات مقشرة",
-      description: "خضروات طازجة ومجهزة",
+      description: "خضروات طازجة ومجهزة ",
       route: "/dishes/LegumesEpluches",
       // items: ["خضروات مقشرة حسب الاختيار", "خضروات مقطعة حسب الاختيار"],
     },
@@ -54,9 +54,7 @@ const HomePage = () => {
             <FaClock size={20} className="text-green-200" />
             <span className="font-bold text-green-200">Livraison</span>
           </div>
-          {/* <div className="text-center md:text-left">
-            🚚 التوصيل خلال 24 ساعة من الطلب | Tel: 0693819739
-          </div> */}
+
           <div className="text-center md:text-left">
             🚚 التوصيل خلال 24 ساعة من الطلب |
             <a
