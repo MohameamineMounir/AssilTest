@@ -4,6 +4,12 @@ import AboutPage from "./components/AboutPage";
 import DishesPage from "./components/DishesPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Pastillas from "./components/Pastillas";
+import Desserts from "./components/Desserts";
+
+import LegumesPack from "./components/legumesPack";
+import LegumesEpluches from "./components/LegumesEpluches";
+import AllDishes from "./components/AllDishes";
 const App = () => {
   return (
     <Router>
@@ -13,6 +19,12 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/dishes" element={<DishesPage />} />
+          <Route path="/dishes/pastillas" element={<Pastillas />} />
+          <Route path="/dishes/legumesPack" element={<LegumesPack />} />
+          <Route path="/dishes/LegumesEpluches" element={<LegumesEpluches />} />
+          <Route path="/dishes/allDishes" element={<AllDishes />} />
+
+          <Route path="/dishes/desserts" element={<Desserts />} />
         </Routes>
         <Footer />
       </div>

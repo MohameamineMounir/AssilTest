@@ -2,9 +2,9 @@ import { PRODUCTS } from "./products";
 import DishesPage from "./DishesPage";
 import Categories from "./Categories";
 
-const Desserts = () => {
+const LegumesPack = () => {
   const pastillaProducts = PRODUCTS.filter(
-    (product) => product.category === "Desserts"
+    (product) => product.category === "legumesPack"
   );
 
   return (
@@ -17,4 +17,4 @@ const Desserts = () => {
   );
 };
 
-export default Desserts;
+export default LegumesPack;

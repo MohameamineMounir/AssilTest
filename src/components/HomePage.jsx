@@ -12,39 +12,74 @@ const AboutPage = lazy(() => import("./AboutPage"));
 
 const HomePage = () => {
   // Product categories data
+  // const categories = [
+  //   {
+  //     src: img1,
+  //     title: "Packs legume",
+  //     description: "Découvrez nos packs de repas préparés",
+  //     route: "/dishes/legumesPack",
+  //     // items: [
+  //     //   "Pack couscous",
+  //     //   "Pack soupe",
+  //     //   "Pack légumes sautés",
+  //     //   "Pack tajine à choix",
+  //     // ],
+  //   },
+  //   {
+  //     src: img2,
+  //     title: " Légumes épluchés",
+  //     description: "Légumes frais et préparés",
+  //     route: "/dishes/LegumesEpluches",
+  //     // items: ["Légumes épluchés à choix", "Légumes coupés à choix"],
+  //   },
+  //   {
+  //     src: img3,
+  //     title: "Pastillas",
+  //     description: "Pastillas fraîches et savoureuses",
+  //     route: "/dishes/pastillas",
+  //     // items: ["Pastillas poisson", "Pastillas poulet"],
+  //   },
+  //   {
+  //     src: img4,
+  //     title: "Desserts",
+  //     description: "Nos délicieux desserts",
+  //     route: "/dishes/Desserts",
+  //     // items: ["Basboussa nature", "Basboussa à la crème", "Cake"],
+  //   },
+  // ];
   const categories = [
     {
       src: img1,
-      title: "Meal Packs",
-      description: "Découvrez nos packs de repas préparés",
-      route: "/dishes",
+      title: "عبوات الخضروات",
+      description: "اكتشف عبوات وجباتنا الجاهزة",
+      route: "/dishes/legumesPack",
       // items: [
-      //   "Pack couscous",
-      //   "Pack soupe",
-      //   "Pack légumes sautés",
-      //   "Pack tajine à choix",
+      //   "عبوة الكسكس",
+      //   "عبوة الحساء",
+      //   "عبوة الخضروات المقلية",
+      //   "عبوة الطاجين حسب الاختيار",
       // ],
     },
     {
       src: img2,
-      title: "Légumes",
-      description: "Légumes frais et préparés",
-      route: "/dishes",
-      // items: ["Légumes épluchés à choix", "Légumes coupés à choix"],
+      title: "خضروات مقشرة",
+      description: "خضروات طازجة ومجهزة",
+      route: "/dishes/LegumesEpluches",
+      // items: ["خضروات مقشرة حسب الاختيار", "خضروات مقطعة حسب الاختيار"],
     },
     {
       src: img3,
-      title: "Pastillas",
-      description: "Pastillas fraîches et savoureuses",
-      route: "/dishes",
-      // items: ["Pastillas poisson", "Pastillas poulet"],
+      title: "بسطيلة",
+      description: "بسطيلات طازجة ولذيذة",
+      route: "/dishes/pastillas",
+      // items: ["بسطيلة السمك", "بسطيلة الدجاج"],
     },
     {
       src: img4,
-      title: "Desserts",
-      description: "Nos délicieux desserts",
-      route: "/dishes",
-      // items: ["Basboussa nature", "Basboussa à la crème", "Cake"],
+      title: "حلويات",
+      description: "حلوياتنا اللذيذة",
+      route: "/dishes/Desserts",
+      // items: ["بسبوسة سادة", "بسبوسة بالكريمة", "كيك"],
     },
   ];
 
@@ -97,31 +132,14 @@ const HomePage = () => {
                   </div>
                 </div>
               </Link>
-
-              {/* <div className="p-4 flex flex-col justify-between h-full">
-                <ul className="space-y-2 mb-4 text-center">
-                  {category.items.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      className="text-gray-600 hover:text-green-700 font-medium"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
             </div>
           ))}
         </div>
       </div>
 
-      {/* Lazy-loaded pages */}
       <Suspense fallback={<div>Loading...</div>}>
         <AboutPage />
-        {/* <DishesPage /> */}
       </Suspense>
-
-      {/* Whatsapp Floating Button */}
       <a
         href="https://wa.me/+212648614441"
         target="_blank"

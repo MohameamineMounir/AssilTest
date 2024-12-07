@@ -1,25 +1,20 @@
-// import bstillaPoison from "../assets/pastilaPison.webp";
-// import pastillaAupoulet from "../assets/pastillaAupoulet.png";
+import { PRODUCTS } from "./products";
+import DishesPage from "./DishesPage";
+import Categories from "./Categories";
 
-// const Pastillas = () => {
-//   const bstlla = [
-//     {
-//       category: "Pastillas",
-//       items: [
-//         {
-//           name: "Pastillas Poisson",
-//           description: "Pastillas délicates aux fruits de mer",
-//           image: bstillaPoison,
-//         },
-//         {
-//           name: "Pastillas Poulet",
-//           description: "Pastillas traditionnelles au poulet",
-//           image: pastillaAupoulet,
-//         },
-//       ],
-//     },
-//   ];
-//   return <></>;
-// };
+const Pastillas = () => {
+  const pastillaProducts = PRODUCTS.filter(
+    (product) => product.category === "Pastillas"
+  );
 
-// export default Pastillas;
+  return (
+    <>
+      <Categories />
+      {pastillaProducts.map((product) => (
+        <DishesPage key={product.category} data={product} />
+      ))}
+    </>
+  );
+};
+
+export default Pastillas;
