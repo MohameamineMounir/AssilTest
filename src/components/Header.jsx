@@ -56,7 +56,7 @@ const Header = () => {
             {/* TikTok Link */}
             <li>
               <a
-                href="https://www.tiktok.com/@yourtiktokusername"
+                href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-300 transition-colors duration-200 flex items-center"
