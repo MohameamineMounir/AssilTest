@@ -83,17 +83,17 @@ export const PRODUCTS = [
     category: "legumesPack",
     items: [
       {
-        name: "حزمة كسكسي",
-        description: "حزمة كاملة لتحضير كسكسي تقليدي",
+        name: "باك كسكسي",
+        description: "باك كاملة لتحضير كسكسي تقليدي",
         image: kouskous,
       },
       {
-        name: "حزمة شوربات",
-        description: "حزمة شوربات متنوعة ولذيذة",
+        name: "باك شوربات",
+        description: "باك شوربات متنوعة ولذيذة",
         image: soup,
       },
       {
-        name: "حزمة خضروات مطهية",
+        name: "باك خضروات مطهية",
         description: "خليط من الخضروات الطازجة للتحمير",
         image: LegumesSautes,
       },
