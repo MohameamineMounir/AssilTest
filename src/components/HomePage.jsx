@@ -63,7 +63,7 @@ const HomePage = () => {
               href="tel:+212693819739"
               className="text-green-300 hover:text-green-400 transition-colors duration-200"
             >
-              Tel: 0693819739
+              0693819739
             </a>
           </div>
         </div>
