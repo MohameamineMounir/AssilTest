@@ -63,7 +63,7 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   const categoriesList = [
     { name: "All dishes", label: "جميع الأطباق" },
-    // { name: "Extras", label: "إضافات" },
+    { name: "salads", label: "سلطات" },
     { name: "desserts", label: "حلويات" },
     { name: "legumesPack", label: "عبوات الخضروات" },
     { name: "pastillas", label: "بسطيلة" },

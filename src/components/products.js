@@ -83,16 +83,6 @@ export const PRODUCTS = [
     category: "legumesPack",
     items: [
       {
-        name: "سلطات متنوعة",
-        description: "مجموعة من السلطات الطازجة",
-        image: saladevaries,
-      },
-      {
-        name: "سلطات ملكية",
-        description: "سلطات فاخرة مع مكونات ممتازة",
-        image: saladeRoyale,
-      },
-      {
         name: "حزمة كسكسي",
         description: "حزمة كاملة لتحضير كسكسي تقليدي",
         image: kouskous,
@@ -106,6 +96,21 @@ export const PRODUCTS = [
         name: "حزمة خضروات مطهية",
         description: "خليط من الخضروات الطازجة للتحمير",
         image: LegumesSautes,
+      },
+    ],
+  },
+  {
+    category: "salads",
+    items: [
+      {
+        name: "سلطات متنوعة",
+        description: "مجموعة من السلطات الطازجة",
+        image: saladevaries,
+      },
+      {
+        name: "سلطات ملكية",
+        description: "سلطات فاخرة مع مكونات ممتازة",
+        image: saladeRoyale,
       },
     ],
   },

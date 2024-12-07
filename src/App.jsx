@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Pastillas from "./components/Pastillas";
 import Desserts from "./components/Desserts";
+import Salads from "./components/Salads";
 
 import LegumesPack from "./components/legumesPack";
 import LegumesEpluches from "./components/LegumesEpluches";
@@ -43,6 +44,7 @@ const App = () => {
             />
             <Route path="/dishes/allDishes" element={<AllDishes />} />
             <Route path="/dishes/desserts" element={<Desserts />} />
+            <Route path="/dishes/salads" element={<Salads />} />
           </Routes>
         </main>
         <Footer />
