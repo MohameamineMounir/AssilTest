@@ -58,10 +58,10 @@ const HomePage = () => {
           <div className="text-center md:text-left">
             🚚 التوصيل خلال 24 ساعة من الطلب |
             <a
-              href="tel:+212693819739"
+              href="tel:+212698883477"
               className="text-green-300 hover:text-green-400 transition-colors duration-200"
             >
-              0693819739
+              0698883477
             </a>
           </div>
         </div>
@@ -111,7 +111,7 @@ const HomePage = () => {
         <AboutPage />
       </Suspense>
       <a
-        href="https://wa.me/+212648614441"
+        href="https://wa.me/+212698883477"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-xl hover:bg-green-700 transition-colors"

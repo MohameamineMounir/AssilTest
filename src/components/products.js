@@ -20,7 +20,7 @@ import kouskous from "../assets/ambrachVeg2.jpg";
 // import Fruits from "../assets/fruits.jpg";
 import amrache1 from "../assets/amranchVeg4.webp";
 import amrache2 from "../assets/ambrachVeg3.jpg";
-import amrache3 from "../assets/amrache2.jpg";
+import amrache3 from "../assets/amrache2.png";
 
 export const PRODUCTS = [
   {
