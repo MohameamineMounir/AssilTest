@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { FaTiktok, FaInstagram } from "react-icons/fa"; // Import TikTok and Instagram icons
 import assil from "../assets/ASSIL.png";
 
 const Header = () => {
@@ -53,28 +52,6 @@ const Header = () => {
                 الأطباق
               </Link>
             </li>
-            {/* TikTok Link */}
-            <li>
-              <a
-                href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-300 transition-colors duration-200 flex items-center"
-              >
-                <FaTiktok className="text-xl ml-2" /> TikTok
-              </a>
-            </li>
-            {/* Instagram Link */}
-            <li>
-              <a
-                href="https://www.instagram.com/freshbox8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-300 transition-colors duration-200 flex items-center"
-              >
-                <FaInstagram className="text-xl ml-2" /> Instagram
-              </a>
-            </li>
           </ul>
 
           {/* Mobile Menu Toggle */}
@@ -116,26 +93,6 @@ const Header = () => {
           >
             الأطباق
           </Link>
-          {/* TikTok Link in Mobile Menu */}
-          <a
-            href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={toggleMenu}
-            className="hover:text-green-300 transition-colors duration-200 flex items-center"
-          >
-            <FaTiktok className="text-2xl ml-2" /> TikTok
-          </a>
-          {/* Instagram Link in Mobile Menu */}
-          <a
-            href="https://www.instagram.com/freshbox8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={toggleMenu}
-            className="hover:text-green-300 transition-colors duration-200 flex items-center"
-          >
-            <FaInstagram className="text-2xl ml-2" /> Instagram
-          </a>
         </div>
       </div>
     </>
