@@ -197,7 +197,7 @@ export const PRODUCTS = [
       },
       {
         name: " المكور الملفوف ",
-        description: "",
+        description: "المكور الملفوف ",
         currentPrice: 5,
         oldPrice: 6,
         weight: "250 g",
@@ -222,10 +222,10 @@ export const PRODUCTS = [
       },
       {
         name: "القزبر معدنوس",
-        description: "",
+        description: "القزبر و معدنوس",
         currentPrice: 4,
         oldPrice: 5,
-        weight: "",
+        weight: "2",
         image: krafes,
       },
       {
