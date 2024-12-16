@@ -21,6 +21,7 @@ export const PRODUCTS = [
         description: "خضروات مقشرة",
         currentPrice: " 25 MAD",
         oldPrice: " 26 MAD",
+        weight: "250 g",
         image: LegumesSautes,
       },
       {
@@ -28,6 +29,7 @@ export const PRODUCTS = [
         description: "خضروات مقشرة",
         currentPrice: " 25 MAD",
         oldPrice: " 26 MAD",
+        weight: "250 g",
         image: x,
       },
 
