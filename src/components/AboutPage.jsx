@@ -68,7 +68,7 @@ const AboutPage = () => {
             <button
               className="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition"
               onClick={() =>
-                window.open("https://wa.me/+212648614441", "_blank")
+                window.open("https://wa.me/+212698883477", "_blank")
               }
               aria-label="Contact us on WhatsApp"
             >
