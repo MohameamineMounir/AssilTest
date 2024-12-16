@@ -66,21 +66,18 @@ export const PRODUCTS = [
       {
         name: "باسبوسا عادية",
         description: "باسبوسا كلاسيكية بدون حشوة",
-        // currentPrice: " 30 MAD",
-        // oldPrice: " 33 MAD",
+
         image: basbousa,
       },
       {
         name: "باسبوسا بالكريم",
         description: "باسبوسا معززة بالكريمة",
-        // currentPrice: " 40 MAD",
-        // oldPrice: " 44 MAD",
+
         image: basbosaCreme,
       },
       {
         name: "الكيك المنزلية",
         description: "الثمن على حسب الكيك المختارة",
-        currentPrice: " ...MAD",
         image: cake,
       },
     ],
