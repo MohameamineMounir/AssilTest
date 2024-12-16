@@ -17,13 +17,13 @@ export const PRODUCTS = [
     category: "LegumesEpluches",
     items: [
       {
-        name: "خضروات مقطعة حسب الاختيار",
-        description: "خضروات مقشرة",
+        name: "خضروات مقطعة ",
+        description: " حسب الاختيار خضروات مقشرة",
 
         image: LegumesSautes,
       },
       {
-        name: "خضروات طازجة ومجهزة",
+        name: "خضروات  مجهزة",
         description: "خضروات مقشرة",
         // currentPrice: " 25 MAD",
         // oldPrice: " 26 MAD",

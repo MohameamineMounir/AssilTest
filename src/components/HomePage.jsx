@@ -39,7 +39,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-3">
+      <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-7">
         <div className="container mx-auto flex items-center justify-between text-sm md:text-base px-4">
           <div className="flex items-center space-x-2">
             <FaClock size={20} className="text-green-200" />
@@ -59,14 +59,14 @@ const HomePage = () => {
       </div>
 
       {/* Categories Section */}
-      <div className="container mx-auto px-4 py-8">
-        <h4 className="text-sm text-center text-gray-600 mb-4">
+      <div className="container mx-auto px-4 pt-10">
+        <h4 className="text-lg text-center text-gray-600 mb-4">
           نقدم مجموعة متنوعة من الخضروات الجاهزة للطهي، مقشرة ومقطعة حسب
           اختياركم، بالإضافة إلى تشكيلة من الفواكه الطازجة، الأطباق التقليدية،
           والحلويات المنزلية.
         </h4>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-5 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-5 lg:gap-8 ">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -81,7 +81,7 @@ const HomePage = () => {
                     loading="lazy"
                     width={400}
                     height={300}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-64 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:opacity-80 transition-opacity p-4 flex flex-col justify-end text-center">
                     <h2 className="text-lg font-semibold text-white">
