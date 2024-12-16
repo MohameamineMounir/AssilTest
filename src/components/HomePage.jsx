@@ -48,7 +48,7 @@ const HomePage = () => {
             </span>
           </div>
 
-          <div className="text-center md:text-left text-base ">
+          <div className="text-center md:text-left text-lg ">
             🚚 التوصيل خلال 24 ساعة من الطلب |
             <a
               href="tel:+212698883477"
@@ -89,7 +89,7 @@ const HomePage = () => {
                     <h2 className="text-lg font-semibold text-white">
                       {category.title}
                     </h2>
-                    <p className="text-sm text-gray-200">
+                    <p className="text-base text-gray-200">
                       {category.description}
                     </p>
                   </div>
