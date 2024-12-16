@@ -12,7 +12,7 @@ const AboutPage = () => {
       </h2>
 
       {/* Content Container */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8 items-center ">
         {/* Left: Image */}
         <div className="relative">
           <img
