@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
+              href="https://www.tiktok.com/@produits_assil?is_from_webapp=1&sender_device=pc"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:opacity-80 transition-opacity duration-200"
@@ -16,7 +16,7 @@ const Footer = () => {
               <FaTiktok className="text-2xl hover:bg-clip-text bg-gradient-to-r from-[#00f2ea] to-[#ff0050]  " />
             </a>
             <a
-              href="https://www.instagram.com/freshbox8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/produits.assil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:opacity-80 transition-opacity duration-200"
