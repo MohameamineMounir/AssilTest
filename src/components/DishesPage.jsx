@@ -44,7 +44,7 @@ const DishesPage = ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all w-full font-medium">
+                    <button className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all w-full font-medium ">
                       اطلب الآن
                     </button>
                   </a>

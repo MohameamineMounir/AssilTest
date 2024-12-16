@@ -19,26 +19,24 @@ export const PRODUCTS = [
       {
         name: "خضروات مقطعة حسب الاختيار",
         description: "خضروات مقشرة",
-        currentPrice: " 25 MAD",
-        oldPrice: " 26 MAD",
-        weight: "250 g",
+
         image: LegumesSautes,
       },
       {
         name: "خضروات طازجة ومجهزة",
         description: "خضروات مقشرة",
-        currentPrice: " 25 MAD",
-        oldPrice: " 26 MAD",
-        weight: "250 g",
+        // currentPrice: " 25 MAD",
+        // oldPrice: " 26 MAD",
+        // weight: "250 g",
         image: x,
       },
 
       {
         name: "بطاطس فريت",
         description: "مقشرة",
-        currentPrice: " 7 MAD",
-        oldPrice: " 8 MAD",
-        weight: "250 g",
+        // currentPrice: " 7 MAD",
+        // oldPrice: " 8 MAD",
+        // weight: "250 g",
         image: amrache3,
       },
     ],
