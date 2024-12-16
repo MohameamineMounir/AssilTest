@@ -42,11 +42,13 @@ const HomePage = () => {
       <div className="bg-gradient-to-r from-green-700 to-green-500 text-white py-7">
         <div className="container mx-auto flex items-center justify-between text-sm md:text-base px-4">
           <div className="flex items-center space-x-2">
-            <FaClock size={20} className="text-green-200" />
-            <span className="font-bold text-green-200">Livraison</span>
+            <FaClock size={25} className="text-green-200" />
+            <span className="font-bold text-green-200 text-base">
+              Livraison
+            </span>
           </div>
 
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left text-base ">
             🚚 التوصيل خلال 24 ساعة من الطلب |
             <a
               href="tel:+212698883477"
