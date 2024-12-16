@@ -316,8 +316,8 @@ export const PRODUCTS = [
         image: basbosaCreme,
       },
       {
-        name: "الكيك المنزلي الثمن على حسب الكيك المختارة",
-        // description: "",
+        name: "الكيك المنزلية",
+        description: "الثمن على حسب الكيك المختارة",
         currentPrice: "...",
         // oldPrice: "متنوع",
         image: cake,
@@ -337,6 +337,7 @@ export const PRODUCTS = [
       },
       {
         name: "باك شوربة",
+        description: "باك شوربات متنوعة ولذيذة",
         currentPrice: 10,
         oldPrice: 11,
         weight: "250 g",
