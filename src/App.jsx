@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Pastillas from "./components/Pastillas";
 import Desserts from "./components/Desserts";
 import Salads from "./components/Salads";
-// import Cart from "./components/Cart";
 import LegumesPack from "./components/legumesPack";
 import LegumesEpluches from "./components/LegumesEpluches";
 import AllDishes from "./components/AllDishes";
@@ -19,7 +18,6 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/about" element={<AboutPage />} />
             <Route path="/dishes" element={<DishesPage />} />
             <Route path="/dishes/pastillas" element={<Pastillas />} />

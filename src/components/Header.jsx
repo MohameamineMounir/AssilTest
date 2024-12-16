@@ -52,30 +52,8 @@ const Header = () => {
                 الأطباق
               </Link>
             </li>
-            {/* TikTok Link */}
-            {/* <li>
-              <a
-                href="https://www.tiktok.com/@freshboxagadir?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-300 transition-colors duration-200 flex items-center"
-              >
-                <FaTiktok className="text-xl ml-2" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/freshbox8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-300 transition-colors duration-200 flex items-center"
-              >
-                <FaInstagram className="text-xl ml-2" />
-              </a>
-            </li> */}
           </ul>
 
-          {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMenu}
             className="md:hidden text-green-300 hover:text-green-400 transition-colors"

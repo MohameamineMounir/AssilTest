@@ -16,33 +16,24 @@ const HomePage = () => {
       title: "عبوات الخضروات",
       description: "اكتشف عبوات وجباتنا الجاهزة",
       route: "/dishes/legumesPack",
-      // items: [
-      //   "عبوة الكسكس",
-      //   "عبوة الحساء",
-      //   "عبوة الخضروات المقلية",
-      //   "عبوة الطاجين حسب الاختيار",
-      // ],
     },
     {
       src: img2,
       title: "خضروات مقشرة",
       description: "خضروات طازجة ومجهزة ",
       route: "/dishes/LegumesEpluches",
-      // items: ["خضروات مقشرة حسب الاختيار", "خضروات مقطعة حسب الاختيار"],
     },
     {
       src: img3,
       title: "بسطيلة",
       description: "بسطيلات طازجة ولذيذة",
       route: "/dishes/pastillas",
-      // items: ["بسطيلة السمك", "بسطيلة الدجاج"],
     },
     {
       src: img4,
       title: "حلويات",
       description: "حلوياتنا اللذيذة",
       route: "/dishes/Desserts",
-      // items: ["بسبوسة سادة", "بسبوسة بالكريمة", "كيك"],
     },
   ];
 

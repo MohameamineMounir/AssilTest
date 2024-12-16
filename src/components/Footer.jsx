@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Copyright Text */}
           <p className="text-sm font-tajawal text-center">
-            © 2024 أصيل | الخضروات الجاهزة للطهي
+            © 2025 أصيل | الخضروات الجاهزة للطهي
           </p>
         </div>
       </div>
