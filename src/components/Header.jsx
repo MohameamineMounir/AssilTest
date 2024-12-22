@@ -44,7 +44,7 @@ const Header = () => {
                 to="/"
                 className="hover:text-green-300 transition-colors duration-200"
               >
-                الرئيسية hi
+                الرئيسية
               </Link>
             </li>
             <li>
