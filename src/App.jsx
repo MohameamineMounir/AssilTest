@@ -11,7 +11,7 @@ import LegumesPack from "./components/legumesPack";
 import LegumesEpluches from "./components/LegumesEpluches";
 import AllDishes from "./components/AllDishes";
 import Cart from "./components/Cart";
-import { CartProvider } from "./Context/ProductContext";
+import { CartProvider } from "./context/ProductContext";
 
 const App = () => {
   return (
