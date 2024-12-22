@@ -1,11 +1,15 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import assil from "../assets/ASSIL.png";
+import { useState } from "react";
+import { ShoppingCart } from "lucide-react";
+import { CartContext } from "../context/ProductContext";
+import { useContext } from "react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const { getTotalQuantity } = useContext(CartContext);
+  const totalQuantity = getTotalQuantity();
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -25,7 +29,14 @@ const Header = () => {
               />
             </div>
           </Link>
-
+          <Link to="/cart" className="relative">
+            <ShoppingCart className="h-8 w-8 text-green-300" />
+            {totalQuantity > 0 && (
+              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                {totalQuantity}
+              </span>
+            )}
+          </Link>
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 rtl items-center">
             <li>

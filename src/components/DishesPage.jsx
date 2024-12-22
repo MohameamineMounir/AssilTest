@@ -1,6 +1,12 @@
 import { FaWhatsapp } from "react-icons/fa";
-
+import { useContext } from "react";
+import { CartContext } from "../context/ProductContext";
 const DishesPage = ({ data }) => {
+  const { cartItems, addToCart } = useContext(CartContext);
+  const getQuantity = (id) => {
+    const item = cartItems.find((item) => item.id === id);
+    return item ? item.quantity : 0;
+  };
   return (
     <>
       <section
@@ -29,25 +35,43 @@ const DishesPage = ({ data }) => {
                     {dish.description}
                   </p>
                   <p>{dish.weight}</p>
-                  <div className="text-center mb-4">
+                  {/* <div className="text-center mb-4">
                     <span className="text-red-500 text-lg font-bold mr-2">
                       {dish.currentPrice}
+                      MAD
                     </span>
                     {dish.oldPrice && (
                       <span className="text-gray-400 text-sm line-through">
                         {dish.oldPrice}
+                        MAD
+                      </span>
+                    )}
+                  </div> */}
+                  <div className="text-center mb-4">
+                    {dish.currentPrice ? (
+                      <>
+                        <span className="text-red-500 text-lg font-bold mr-2">
+                          {dish.currentPrice}MAD
+                        </span>
+                        {dish.oldPrice && (
+                          <span className="text-gray-400 text-sm line-through">
+                            {dish.oldPrice} MAD
+                          </span>
+                        )}
+                      </>
+                    ) : (
+                      <span className="text-gray-500 text-lg font-semibold">
+                        السعر عند التواصل معنا
                       </span>
                     )}
                   </div>
-                  <a
-                    href="https://wa.me/+212698883477"
-                    target="_blank"
-                    rel="noopener noreferrer"
+
+                  <button
+                    onClick={() => addToCart(dish)}
+                    className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all w-full font-medium"
                   >
-                    <button className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all w-full font-medium ">
-                      اطلب الآن
-                    </button>
-                  </a>
+                    ({getQuantity(dish.id)}) اضف للسلة
+                  </button>
                 </div>
               </div>
             ))}
